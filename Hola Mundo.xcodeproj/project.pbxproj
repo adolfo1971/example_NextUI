@@ -10,7 +10,7 @@
 		DD4947621D53BEBD004CCF1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4947611D53BEBD004CCF1E /* AppDelegate.swift */; };
 		DD4947641D53BEBD004CCF1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4947631D53BEBD004CCF1E /* ViewController.swift */; };
 		DD4947671D53BEBD004CCF1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4947651D53BEBD004CCF1E /* Main.storyboard */; };
-		DD4947691D53BEBD004CCF1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD4947681D53BEBD004CCF1E /* Assets.xcassets */; };
+		DD4947691D53BEBD004CCF1E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD4947681D53BEBD004CCF1E /* Images.xcassets */; };
 		DD49476C1D53BEBD004CCF1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD49476A1D53BEBD004CCF1E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -19,7 +19,7 @@
 		DD4947611D53BEBD004CCF1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD4947631D53BEBD004CCF1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD4947661D53BEBD004CCF1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DD4947681D53BEBD004CCF1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD4947681D53BEBD004CCF1E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DD49476B1D53BEBD004CCF1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD49476D1D53BEBD004CCF1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,7 +57,7 @@
 				DD4947611D53BEBD004CCF1E /* AppDelegate.swift */,
 				DD4947631D53BEBD004CCF1E /* ViewController.swift */,
 				DD4947651D53BEBD004CCF1E /* Main.storyboard */,
-				DD4947681D53BEBD004CCF1E /* Assets.xcassets */,
+				DD4947681D53BEBD004CCF1E /* Images.xcassets */,
 				DD49476A1D53BEBD004CCF1E /* LaunchScreen.storyboard */,
 				DD49476D1D53BEBD004CCF1E /* Info.plist */,
 			);
@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					DD49475D1D53BEBC004CCF1E = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = S64CWQQPB6;
 					};
 				};
 			};
@@ -123,7 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD49476C1D53BEBD004CCF1E /* LaunchScreen.storyboard in Resources */,
-				DD4947691D53BEBD004CCF1E /* Assets.xcassets in Resources */,
+				DD4947691D53BEBD004CCF1E /* Images.xcassets in Resources */,
 				DD4947671D53BEBD004CCF1E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,10 +250,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Hola Mundo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nextu.iosdeveloper.Hola-Mundo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adolfomariscal.iosdeveloper.Hola-Mundo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +266,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Hola Mundo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nextu.iosdeveloper.Hola-Mundo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adolfomariscal.iosdeveloper.Hola-Mundo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -286,6 +297,7 @@
 				DD4947721D53BEBD004CCF1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
